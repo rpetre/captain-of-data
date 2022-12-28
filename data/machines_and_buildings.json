@@ -1,5 +1,5 @@
 {
-    "game_version": "0.4.7.0",
+    "game_version": "0.4.13.0",
     "machines_and_buildings": [
         {
             "id": "TurbineLowPressT2",
@@ -1864,7 +1864,7 @@
                             "quantity": 4
                         },
                         {
-                            "name": "Exhaust",
+                            "name": "Carbon dioxide",
                             "quantity": 12
                         }
                     ]
@@ -1888,8 +1888,8 @@
                             "quantity": 4
                         },
                         {
-                            "name": "Exhaust",
-                            "quantity": 12
+                            "name": "Carbon dioxide",
+                            "quantity": 8
                         }
                     ]
                 }
@@ -2267,7 +2267,7 @@
                         },
                         {
                             "name": "Water",
-                            "quantity": 4
+                            "quantity": 6
                         }
                     ],
                     "outputs": [
@@ -2413,7 +2413,7 @@
                     "outputs": [
                         {
                             "name": "Animal feed",
-                            "quantity": 6
+                            "quantity": 16
                         }
                     ]
                 },
@@ -2429,7 +2429,7 @@
                     "outputs": [
                         {
                             "name": "Animal feed",
-                            "quantity": 11
+                            "quantity": 12
                         }
                     ]
                 },
@@ -2783,6 +2783,22 @@
                         {
                             "name": "Sausage",
                             "quantity": 8
+                        }
+                    ]
+                },
+                {
+                    "name": "Meat grinding",
+                    "duration": 20,
+                    "inputs": [
+                        {
+                            "name": "Meat",
+                            "quantity": 12
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Meat trimmings",
+                            "quantity": 16
                         }
                     ]
                 },
@@ -3183,6 +3199,30 @@
                             "quantity": 4
                         },
                         {
+                            "name": "Bricks",
+                            "quantity": 4
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Construction Parts",
+                            "quantity": 4
+                        }
+                    ]
+                },
+                {
+                    "name": "CP assembly (T1)",
+                    "duration": 40,
+                    "inputs": [
+                        {
+                            "name": "Iron",
+                            "quantity": 3
+                        },
+                        {
+                            "name": "Wood",
+                            "quantity": 4
+                        },
+                        {
                             "name": "Concrete slab",
                             "quantity": 4
                         }
@@ -3297,6 +3337,30 @@
                 }
             ],
             "recipes": [
+                {
+                    "name": "CP assembly (T2)",
+                    "duration": 20,
+                    "inputs": [
+                        {
+                            "name": "Iron",
+                            "quantity": 3
+                        },
+                        {
+                            "name": "Wood",
+                            "quantity": 4
+                        },
+                        {
+                            "name": "Bricks",
+                            "quantity": 4
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Construction Parts",
+                            "quantity": 4
+                        }
+                    ]
+                },
                 {
                     "name": "CP assembly (T2)",
                     "duration": 20,
@@ -3501,6 +3565,30 @@
                             "quantity": 4
                         },
                         {
+                            "name": "Bricks",
+                            "quantity": 4
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Construction Parts",
+                            "quantity": 4
+                        }
+                    ]
+                },
+                {
+                    "name": "CP assembly (T3)",
+                    "duration": 10,
+                    "inputs": [
+                        {
+                            "name": "Iron",
+                            "quantity": 3
+                        },
+                        {
+                            "name": "Wood",
+                            "quantity": 4
+                        },
+                        {
                             "name": "Concrete slab",
                             "quantity": 4
                         }
@@ -3558,13 +3646,13 @@
                     "inputs": [
                         {
                             "name": "Iron",
-                            "quantity": 5
+                            "quantity": 10
                         }
                     ],
                     "outputs": [
                         {
                             "name": "Mechanical Parts",
-                            "quantity": 4
+                            "quantity": 8
                         }
                     ]
                 },
@@ -3681,7 +3769,7 @@
                             "quantity": 8
                         },
                         {
-                            "name": "Liquid Nitrogen",
+                            "name": "Nitrogen Tank",
                             "quantity": 2
                         }
                     ],
@@ -4092,7 +4180,31 @@
             ],
             "recipes": [
                 {
-                    "name": "CP assembly (T3)",
+                    "name": "CP assembly (T4)",
+                    "duration": 10,
+                    "inputs": [
+                        {
+                            "name": "Iron",
+                            "quantity": 6
+                        },
+                        {
+                            "name": "Wood",
+                            "quantity": 8
+                        },
+                        {
+                            "name": "Bricks",
+                            "quantity": 8
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Construction Parts",
+                            "quantity": 8
+                        }
+                    ]
+                },
+                {
+                    "name": "CP assembly (T4)",
                     "duration": 10,
                     "inputs": [
                         {
@@ -4288,7 +4400,7 @@
                             "quantity": 8
                         },
                         {
-                            "name": "Liquid Nitrogen",
+                            "name": "Nitrogen Tank",
                             "quantity": 2
                         }
                     ],
@@ -5559,6 +5671,54 @@
                         }
                     ],
                     "outputs": []
+                },
+                {
+                    "name": "Fertilizer dumping",
+                    "duration": 4,
+                    "inputs": [
+                        {
+                            "name": "Fertilizer (organic)",
+                            "quantity": 4
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Water pollution",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Fertilizer dumping",
+                    "duration": 4,
+                    "inputs": [
+                        {
+                            "name": "Fertilizer I",
+                            "quantity": 2
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Water pollution",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Fertilizer dumping",
+                    "duration": 4,
+                    "inputs": [
+                        {
+                            "name": "Fertilizer II",
+                            "quantity": 2
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Water pollution",
+                            "quantity": 2
+                        }
+                    ]
                 }
             ]
         },
@@ -5782,7 +5942,7 @@
                     ],
                     "outputs": [
                         {
-                            "name": "Liquid Nitrogen",
+                            "name": "Nitrogen Tank",
                             "quantity": 4
                         }
                     ]
@@ -5909,7 +6069,7 @@
                     ],
                     "outputs": [
                         {
-                            "name": "Liquid Nitrogen",
+                            "name": "Nitrogen Tank",
                             "quantity": 4
                         }
                     ]
@@ -5980,7 +6140,7 @@
                 },
                 {
                     "name": "Graphite production",
-                    "duration": 20,
+                    "duration": 10,
                     "inputs": [
                         {
                             "name": "Carbon dioxide",
@@ -6161,7 +6321,7 @@
                     "outputs": [
                         {
                             "name": "Water",
-                            "quantity": 20
+                            "quantity": 18
                         },
                         {
                             "name": "Slag",
@@ -6366,7 +6526,27 @@
                     "outputs": [
                         {
                             "name": "Fuel gas",
-                            "quantity": 5
+                            "quantity": 6
+                        },
+                        {
+                            "name": "Compost",
+                            "quantity": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "Digestion",
+                    "duration": 60,
+                    "inputs": [
+                        {
+                            "name": "Vegetables",
+                            "quantity": 14
+                        }
+                    ],
+                    "outputs": [
+                        {
+                            "name": "Fuel gas",
+                            "quantity": 6
                         },
                         {
                             "name": "Compost",
@@ -6386,7 +6566,7 @@
                     "outputs": [
                         {
                             "name": "Fuel gas",
-                            "quantity": 9
+                            "quantity": 10
                         },
                         {
                             "name": "Compost",
@@ -7330,7 +7510,7 @@
                     "duration": 60,
                     "inputs": [
                         {
-                            "name": "Yellow cake",
+                            "name": "Yellowcake",
                             "quantity": 3
                         },
                         {
@@ -7411,7 +7591,7 @@
             "maintenance_cost_quantity": 4,
             "electricity_consumed": 1400,
             "electricity_generated": 0,
-            "computing_consumed": 6,
+            "computing_consumed": 4,
             "computing_generated": 0,
             "storage_capacity": 0,
             "unity_cost": 0,
@@ -7645,7 +7825,7 @@
                         },
                         {
                             "name": "Coal",
-                            "quantity": 4
+                            "quantity": 2
                         },
                         {
                             "name": "Graphite",
@@ -7666,7 +7846,7 @@
                             "quantity": 6
                         },
                         {
-                            "name": "Steam hi",
+                            "name": "Steam lo",
                             "quantity": 4
                         },
                         {
@@ -7866,7 +8046,7 @@
                     ],
                     "outputs": [
                         {
-                            "name": "Yellow cake",
+                            "name": "Yellowcake",
                             "quantity": 6
                         },
                         {
