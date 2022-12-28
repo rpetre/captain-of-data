@@ -95,9 +95,11 @@
 using System.IO;
 using System.Collections.Generic;
 using Mafi;
+using Mafi.Collections;
 using Mafi.Base;
 using Mafi.Core;
 using Mafi.Core.Mods;
+using Mafi.Core.Game;
 using Mafi.Core.Prototypes;
 using Mafi.Core.Products;
 using Mafi.Core.Factory.Recipes;
@@ -3280,6 +3282,8 @@ namespace DataExtractorMod {
         }
 
         public void Register(ImmutableArray<DataOnlyMod> mods, RegistrationContext context) {}
+
+        public void ChangeConfigs(Lyst<IConfig> configs){ }
 
     }
 }

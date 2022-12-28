@@ -1,0 +1,3 @@
+In order to help me build the mod, I added a .csproj file based on the sample one from MaFi. It's not very portable since I decided to hardcode the game path and it still requires a bunch of manual steps to make Visual Studio build it.
+
+In my defense this is the first time I ever attempt building something in .net so...
